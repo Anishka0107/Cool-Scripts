@@ -13,16 +13,16 @@
 
 ######Fedora
 `sudo dnf install python3`    
-`sudo dnf install python3-pip`
+`sudo dnf install python3-pip`    
 `sudo dnf install xsel`     
 Older systems may use yum
 
   * Now, install the modules :   
-`pip3 install pyperclip`
+`pip3 install pyperclip`   
 `pip3 install py-bcrypt`   
 
   * To run a script, type the following in the terminal :    
-`python3 the_file_name.py`
+`python3 the_file_name.py`   
 
   * An alternative way is :   
       * Add the shebang line at the starting of the file :    
