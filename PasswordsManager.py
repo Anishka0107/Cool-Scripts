@@ -38,7 +38,7 @@ if attempt == 10 :
     sys.exit()
 passdict = dict(f.read())
 while(True) :
-    ch = input ("What step do you wish to perform? \n\t 1. Retrieve password \n\t 2. Enter new or modify credentials\n\t 3. Retrieve all passwords \n\t 4. Exit\n")
+    ch = input ("What step do you wish to perform? \n\t 1. Retrieve password \n\t 2. Enter new or modify credentials\n\t 3. Retrieve all passwords \n\t 4. Delete all passwords \n\t 5. Exit \n")
     if ch == '1' :
         accname = input("Enter the name of the account whose password you want to retrieve : ")
         if not accname in passdict.keys() :
@@ -66,6 +66,15 @@ while(True) :
                 break
     elif ch == '3' :
         pprint.pprint(passdict)
+    elif ch == '4' :
+        print ('Seems like you are in some trouble!!')
+        myc = input('Are you sure to go forward with the decision? (y or n) : ')
+        if myc == 'y' or myc == 'Y' :
+            os.unlink('./.mypass.txt')
+            print ('Permanently deleted all your passwords!! Now dozing off!! Do come back to save your passwords!')
+       	    sys.exit()
+        else :
+            print ('No problem man!!')
     else :
         print ("Dozing off!")
         break
