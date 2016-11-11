@@ -4,8 +4,9 @@
 You need to specify the absolute path of the folder (whose versions you want to maintain) as the 2nd argument of the command ./LikeGit.py command
 '''
 
-import sys, os, zipfile, shelve
+import sys, os, zipfile, shelve, time
 
+currtime = time.strftime("__%Y-%m-%d__%H-%M-%S")
 mypath = sys.argv[1]
 if os.path.exists (mypath) :
     shelff = shelve.open('currver')
@@ -13,7 +14,7 @@ if os.path.exists (mypath) :
         shelff[mypath] += 1
     else :
         shelff[mypath] = 1
-    newZip = zipfile.ZipFile (mypath + str(shelff[mypath]), 'w')
+    newZip = zipfile.ZipFile (mypath + str(shelff[mypath]) + currtime, 'w')
     newZip.write (mypath, compress_type = zipfile.ZIP_DEFLATED)
     newZip.close()    
     shelff.close()
