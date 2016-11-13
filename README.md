@@ -19,7 +19,8 @@ Older systems may use yum
 
   * Now, install the modules :   
 `pip3 install pyperclip`   
-`pip3 install py-bcrypt`   
+`pip3 install py-bcrypt`     
+`pip3 install requests`
 
   * To run a script, type the following in the terminal :    
 `python3 the_file_name.py`   
