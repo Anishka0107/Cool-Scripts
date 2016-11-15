@@ -21,6 +21,7 @@ Older systems may use yum
 `pip3 install pyperclip`   
 `pip3 install py-bcrypt`     
 `pip3 install requests`
+`pip3 install beautifulsoup4`
 
   * To run a script, type the following in the terminal :    
 `python3 the_file_name.py`   
