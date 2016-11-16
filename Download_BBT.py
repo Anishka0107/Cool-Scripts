@@ -53,10 +53,10 @@ if ch == 'y' or ch == 'Y' :
                 name += str(j) + part4
             print ("Downloading Episode " + str(j) + "...")    
 # In case you use a proxy server, please remove the comment of the line below, and comment out the line just followed after
-#            response = requests.get (name, proxies = urllib.getproxies())
+#            response = requests.get (name, proxies = proxyDict)
             response = requests.get (name)
             response.raise_for_status()
-            newFile = open('Episode'+str(j),'wb')
+            newFile = open('Episode'+str(j), 'wb')
             for chunk in response.iter_content(100000) :
                 newFile.write(chunk)
         print ("Download of Season " + str(i) + " complete!")

@@ -10,5 +10,5 @@ links_to_open = the_page.select('._2cLu-l')
 num_tabs = min (len (links_to_open), 11)
 for i in range(num_tabs) :
     webbrowser.open ("https://flipkart.com" + links_to_open[i].get('href'))
-print ("Opened " + num_tabs + " results in your default browser...")
+print ("Opened " + str(num_tabs) + " results in your default browser...")
 
