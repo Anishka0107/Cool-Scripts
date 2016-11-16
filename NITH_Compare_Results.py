@@ -7,7 +7,7 @@ browser = webdriver.Chrome()
 browser.get('https://14.139.56.15/scheme15/studentresult/index.asp')
 students = []
 try : 
-    for i in range(1,15) :
+    for i in range(1,61) :
         roll_no = browser.find_element_by_css_selector('input.auto-style12')
         roll = '15MI5'
         if i<10:
