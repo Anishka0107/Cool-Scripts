@@ -21,7 +21,8 @@ Older systems may use yum
 `pip3 install pyperclip`   
 `pip3 install py-bcrypt`     
 `pip3 install requests`    
-`pip3 install beautifulsoup4`
+`pip3 install beautifulsoup4`    
+`pip3 install selenium`
 
   * To run a script, type the following in the terminal :    
 `python3 the_file_name.py`   
@@ -39,3 +40,14 @@ Older systems may use yum
 
 > For Windows, OSX, other Linux distro users :    
   Please google how to install python3 and pip and the install the modules using pip
+
+#####For some programs you may need to use Google Chrome web browser, so you need to install it.
+#####Then, install ChromeDriver. Follow the steps below : 
+`sudo apt-get install xvfb`   
+`sudo apt-get install unzip`   
+`wget -N http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip`   
+`unzip chromedriver_linux64.zip`   
+`chmod +x chromedriver`   
+`sudo mv -f chromedriver /usr/local/share/chromedriver`   
+`sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver`   
+`sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver`   
