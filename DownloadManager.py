@@ -11,7 +11,6 @@ while True :
     urls.append([url, ''])
     filename = input ("Enter the name with which this file should be saved : ")
     urls[len(urls)-1][1] = filename
-os.system ('cd ~/Downloads')    
 def downloader(x) :
     os.environ['numthreads'] = '8'
     os.environ['url'] = urls[x][0]
