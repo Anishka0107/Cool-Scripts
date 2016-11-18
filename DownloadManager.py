@@ -14,11 +14,9 @@ while True :
 def downloader(x) :
     os.environ['numthreads'] = '8'
     os.environ['url'] = urls[x][0]
-    os.system ('echo $numthreads')
-    os.system ('echo {1..$numthreads}')
     os.system ('for i in {1..$numthreads}; do wget -r -np -N "$url" -O ' + urls[x][1] + '; done')
     
 for x in range (len(urls)) :    
-    threadobj = threading.Thread(target=downloader(x))
+    threadobj = threading.Thread(target=downloader, args=[x])
     threadobj.start()
 print ("Downloaded")    
