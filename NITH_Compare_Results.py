@@ -2,14 +2,15 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import re
 
-print ("This program will compare and show the rank list of CGPI 1st year of students of NIT Hamirpur CSE(Dual) batch 2015-2020.")
+print ("This program will compare and show the rank list of CGPI 1st year of students of NIT Hamirpur batch 2015-.")
+maxroll = 60     # The maximum roll number of your class
+roll = '15MI5'   # The commomn part of the roll numbers of the students of your class
 browser = webdriver.Chrome()
 browser.get('https://14.139.56.15/scheme15/studentresult/index.asp')
 students = []
 try : 
-    for i in range(1,61) :
+    for i in range(1,maxroll+1) :
         roll_no = browser.find_element_by_css_selector('input.auto-style12')
-        roll = '15MI5'
         if i<10:
             roll += '0' + str(i)
         else :
