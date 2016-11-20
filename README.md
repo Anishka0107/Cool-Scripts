@@ -2,7 +2,7 @@
 
 **Repo to contain cool things in python made by me**
 
-###Steps to reproduce :
+###Steps to build :
 
   * Run the following commands in your terminal to install python and pip:
     
