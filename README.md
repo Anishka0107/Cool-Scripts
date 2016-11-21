@@ -23,6 +23,7 @@ Older systems may use yum
 `pip3 install requests`    
 `pip3 install beautifulsoup4`    
 `pip3 install selenium`
+`pip3 install schedule`
 
   * To run a script, type the following in the terminal :    
 `python3 the_file_name.py`   
