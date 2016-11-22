@@ -24,11 +24,11 @@ Older systems may use yum
 `pip3 install py-bcrypt`     
 `pip3 install requests`    
 `pip3 install beautifulsoup4`    
-`pip3 install selenium`
-`pip3 install schedule`
-`pip3 install imapclient`
-`pip3 install pyzmail`  
-`pip3 install twilio`
+`pip3 install selenium`  
+`pip3 install schedule`  
+`pip3 install imapclient`  
+`pip3 install pyzmail`   
+`pip3 install twilio`  
 
   * To run a script, type the following in the terminal :    
 `python3 the_file_name.py`   
