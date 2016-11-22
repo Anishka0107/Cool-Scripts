@@ -1,4 +1,13 @@
-import os, stat, pyperclip, sys, time, getpass, hashlib, bcrypt, select, pprint
+import os
+import stat
+import pyperclip
+import sys
+import time
+import getpass
+import hashlib
+import bcrypt
+import select
+import pprint
         
 if not os.path.exists('.mypass.txt') :
     f = open('.mypass.txt', 'w')
@@ -70,9 +79,9 @@ while(True) :
         print ('Seems like you are in some trouble!!')
         myc = input('Are you sure to go forward with the decision? (y or n) : ')
         if myc == 'y' or myc == 'Y' :
-            os.unlink('./.mypass.txt')
+            os.unlink ('./.mypass.txt')
             print ('Permanently deleted all your passwords!! Now dozing off!! Do come back to save your passwords!')
-       	    sys.exit()
+       	    sys.exit()   
         else :
             print ('No problem man!!')
     else :

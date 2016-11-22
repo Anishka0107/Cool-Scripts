@@ -1,6 +1,9 @@
 #! /usr/bin/python3
 
-import bs4, sys, webbrowser, requests
+import bs4
+import sys
+import webbrowser
+import requests
 
 response = requests.get ('https://www.flipkart.com/search?q=' + ' '.join(sys.argv[1:]) + '&otracker=start&as-show=on&as=off')
 response.raise_for_status()

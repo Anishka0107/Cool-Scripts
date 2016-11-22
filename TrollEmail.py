@@ -1,4 +1,5 @@
-import smtplib, getpass
+import smtplib
+import getpass
 
 # In the lines below please insert the domain name and port address of the SMTP server of your Email provider
 domain_name = 'smtp.gmail.com'

@@ -9,12 +9,14 @@
 ######Ubuntu/Debian   
 `sudo apt-get install python3`    
 `sudo apt-get install python3-pip`  
-`sudo apt-get install xsel`
+`sudo apt-get install xsel`    
+`sudo apt-get install libssl-dev`  
 
 ######Fedora
 `sudo dnf install python3`    
 `sudo dnf install python3-pip`    
-`sudo dnf install xsel`     
+`sudo dnf install xsel`   
+`sudo dnf install libssl-dev`  
 Older systems may use yum
 
   * Now, install the modules :   
@@ -24,6 +26,9 @@ Older systems may use yum
 `pip3 install beautifulsoup4`    
 `pip3 install selenium`
 `pip3 install schedule`
+`pip3 install imapclient`
+`pip3 install pyzmail`  
+`pip3 install twilio`
 
   * To run a script, type the following in the terminal :    
 `python3 the_file_name.py`   

@@ -4,7 +4,11 @@
 You need to specify the absolute path of the folder (whose versions you want to maintain) as the 2nd argument of the command ./LikeGit.py command
 '''
 
-import sys, os, zipfile, shelve, time
+import sys
+import os
+import zipfile
+import shelve
+import time
 
 currtime = time.strftime("__%Y-%m-%d__%H-%M-%S")
 mypath = sys.argv[1]

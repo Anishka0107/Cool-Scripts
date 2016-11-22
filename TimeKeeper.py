@@ -1,4 +1,5 @@
-import time, datetime
+import time
+import datetime
 
 ch = input ("Which utility do you wish to use : \n\t1. Stopwatch \n\t2. Timer \n\t3. Reminder\nEnter your choice : ")
 if ch == '1':

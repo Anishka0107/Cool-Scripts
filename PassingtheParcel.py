@@ -1,4 +1,9 @@
-import time, subprocess, random, sys, getopt, shutil
+import time
+import subprocess
+import random
+import sys
+import getopt
+import shutil
 
 # The game can be customised by passing optional commandline arguments
 # Press 'Ctrl-C' to end the game

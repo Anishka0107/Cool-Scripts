@@ -1,4 +1,5 @@
-import requests, os
+import requests
+import os
 # In case you use a proxy server, please remove comments from the lines below in ('''    ''') ...
 # If you also have a username and password please search for the steps on the net, they are pretty easy to implement...
 # In case you use SOCKS, please install requests[socks] using pip

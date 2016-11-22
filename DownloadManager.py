@@ -1,4 +1,5 @@
-import os, threading
+import os
+import threading
 
 print ("Enter the URLs of the files to be downloaded one-by-one and when you do not want to enter any more URLs, simply press 'ENTER'")
 print ("Paste this script (and run from there) in the folder where you wish to download the files(s)...")

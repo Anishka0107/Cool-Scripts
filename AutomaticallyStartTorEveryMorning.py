@@ -1,6 +1,9 @@
 #! /usr/bin/python3
 
-import os, subprocess, time, schedule
+import os
+import subprocess
+import time
+import schedule
 
 # Add this script to startup to save yourself from manually running it every time you reboot. Steps (Dash -> Startup Applications -> Add -> Browse and select this script (Remember to provide permissions as stated in README) -> Give a name and save)
 

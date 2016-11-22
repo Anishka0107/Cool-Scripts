@@ -1,6 +1,8 @@
 #! /usr/bin/python3
 
-import bs4, requests, os
+import bs4
+import requests
+import os
 
 print ("Downloading all tutorials of www.learnshell.org")
 os.mkdir('Shell Tutorials')
