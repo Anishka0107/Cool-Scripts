@@ -81,7 +81,7 @@ while(True) :
         if myc == 'y' or myc == 'Y' :
             os.unlink ('./.mypass.txt')
             print ('Permanently deleted all your passwords!! Now dozing off!! Do come back to save your passwords!')
-       	    sys.exit()   
+       	    sys.exit()
         else :
             print ('No problem man!!')
     else :

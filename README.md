@@ -11,6 +11,9 @@
 `sudo apt-get install python3-pip`  
 `sudo apt-get install xsel`    
 `sudo apt-get install libssl-dev`  
+`sudo apt-get install scrot`   
+`sudo apt-get install python3-tk`   
+`sudo apt-get install python3-dev`   
 
 ######Fedora
 `sudo dnf install python3`    
@@ -29,6 +32,7 @@ Older systems may use yum
 `pip3 install imapclient`  
 `pip3 install pyzmail`   
 `pip3 install twilio`  
+`pip3 install python3-xlib`   
 
   * To run a script, type the following in the terminal :    
 `python3 the_file_name.py`   

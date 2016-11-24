@@ -13,7 +13,7 @@ browser.get('https://accounts.google.com/ServiceLogin?sacu=1&scc=1&continue=http
 try :
     email = browser.find_element_by_id('Email')
     email.send_keys(email_address)
-    email.submit()
+    email.submit()  
 except :
     print ("Some mysterious error! Cannot find / fill email box...")
 browser.implicitly_wait(1)

@@ -12,8 +12,8 @@ from twilio.rest import TwilioRestClient
 # Create a free account on Twilio and register with your own phone number to receive SMS notification after your script runs successfully!
 commands = []
 domain_name = 'imap.gmail.com'   # Domain name of the IMAP server of your email service provider
-emailaddress = input ('Please enter your mail address : ')
-password = getpass.getpass ('Please enter your password : ')
+emailaddress = '__________________'   # Your mail address
+password = '____________________'    # Your email ID password
 twilioSID = '____________________'   # The account SID, replace it with your details
 twilioAuthToken = '____________________'   # The auth token, replace it with your details
 sender = '+___________'    # Your Twilio phone number
