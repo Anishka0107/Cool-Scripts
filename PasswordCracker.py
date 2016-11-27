@@ -1,8 +1,9 @@
 # Well its brute-force so takes exponential time, and a whopping amount of memory...
 # It can be used to crack login passwords of websites with few modifications.
+# Can be made multithreaded and also parallel processing may be used for optimal results.
+# A randomized password cracker would have better efficiency.
 import sys
 
-list0=list('abc')
 list1 = list ('abcdefghijklmnopqrstuvwxyz')
 list2 = list1 + list ('1234567890')
 list3 = list2 + list ('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
