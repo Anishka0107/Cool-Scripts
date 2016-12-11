@@ -33,6 +33,8 @@ Older systems may use yum
 `pip3 install pyzmail`   
 `pip3 install twilio`  
 `pip3 install python3-xlib`   
+`pip3 install fb`   
+`pip3 install facepy`  
 
   * To run a script, type the following in the terminal :    
 `python3 the_file_name.py`   
