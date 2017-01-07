@@ -6,6 +6,11 @@
 
   * Run the following commands in your terminal to install python and pip:
     
+######Arch Linux 
+(Install as root)   
+`pacman -Syu python`     
+`pacman -Syu python-pip`             
+
 ######Ubuntu/Debian   
 `sudo apt-get install python3`    
 `sudo apt-get install python3-pip`  
