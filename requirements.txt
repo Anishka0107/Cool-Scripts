@@ -1,0 +1,13 @@
+pyperclip
+py-bcrypt
+requests
+beautifulsoup4
+selenium
+schedule
+imapclient
+pyzmail
+twilio
+python3-xlib
+fb
+facepy
+

