@@ -8,6 +8,7 @@ import hashlib
 import bcrypt
 import select
 import pprint
+import ast
         
 if not os.path.exists('.mypass.txt') :
     f = open('.mypass.txt', 'w')
@@ -21,6 +22,7 @@ if not os.path.exists('.mypass.txt') :
     pwd = pwd.encode('utf-8')
     securedpwd = bcrypt.hashpw(pwd, bcrypt.gensalt(13))
     f.write(str(securedpwd) + '\n')
+    f.write("{}")
     print ("Successfully created!! Now you may proceed to save passwords in your system by running the program again!!")
     f.close()
     sys.exit()
@@ -32,8 +34,10 @@ pss = pss.rstrip('\n')
 pss = pss.lstrip('b\'')
 pss = pss.rstrip('\'')
 pss = pss.encode('utf-8')
+
 pwd = getpass.getpass("Enter the master password : ")
 pwd = pwd.encode('utf-8')
+
 attempt = 0
 while pss != bcrypt.hashpw(pwd, pss) and attempt < 10 :
     print ("Wrong password! Wait for some time...")
@@ -45,7 +49,9 @@ if attempt == 10 :
     print ("You have crossed the number of attempts!! Re-run the script to start over...")
     f.close()
     sys.exit()
-passdict = dict(f.read())
+
+passdict = dict(ast.literal_eval(f.read()))
+
 while(True) :
     ch = input ("What step do you wish to perform? \n\t 1. Retrieve password \n\t 2. Enter new or modify credentials\n\t 3. Retrieve all passwords \n\t 4. Delete all passwords \n\t 5. Exit \n")
     if ch == '1' :
@@ -60,6 +66,7 @@ while(True) :
             print ('Impatient fellow!')
         pyperclip.copy(str(hashlib.sha512('gooddayahead'.encode('utf-8'))))
         print ("Hey! Your clipboard now has a beautiful message for you!!")
+
     elif ch == '2' :
         while (True) :
             name = input("Enter the name under which the password is to be stored : ")
@@ -69,8 +76,9 @@ while(True) :
                 passdict[name] = password
             nn = input('Do you wish to continue? (y or n) : ').lower()
             if nn == 'n' :
-                f.truncate()
-                f.write(origpss)
+                f.close()
+                f = open('.mypass.txt','w+')
+                f.write(str(origpss))
                 f.write(str(passdict))
                 break
     elif ch == '3' :
