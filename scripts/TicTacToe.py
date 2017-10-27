@@ -65,16 +65,16 @@ while moves < 9 :
             chance = 1
             chx = 'X'
         if win_is_true(chx) :
-            print ("Wohoo!! Congo Dude!")
+            print ("Wohoo!! Congo!!")
             if chance == 2 :
-                print (p1 + " is the winner!!")
+                print (p1 + " is the winner!")
             else :
-                print (p2 + " is the winner!!")
+                print (p2 + " is the winner!")
             print ("The board currently looks like : ")
             draw_board()    
             sys.exit()
     moves += 1
-print ("Its a draw man!! FO")
+print ("Its a draw man!!")
 print ("The board currently looks like : ")
 draw_board()
 print ("Bye Bye! Do come back...")
