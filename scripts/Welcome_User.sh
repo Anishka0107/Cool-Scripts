@@ -1,6 +1,6 @@
-#! bin/bash
+#! bin/sh
 
-# Add this to your ~/.bashrc or in ~/.whatever_shell_you_have_rc
+# Add this to the .rc file of your shell
 
 echo -e "Hello \033[1;32m$USER!!\033[0m What have you been upto?"
 RANDOM=$$
