@@ -2,9 +2,9 @@ import sys
 import random
 
 tictactoe = {
-             1:' ', 2:' ', 3:' ',
-             4:' ', 5:' ', 6:' ',
-             7:' ', 8:' ', 9:' '
+                1:' ', 2:' ', 3:' ',
+                4:' ', 5:' ', 6:' ',
+                7:' ', 8:' ', 9:' '
             }   # the tic-tac-toe board
 
 def draw_board():
@@ -18,7 +18,7 @@ def draw_board():
     print (" "+tictactoe[7]+" | "+tictactoe[8]+" | "+tictactoe[9]+" ")
     print ("   |   |   ")
     
-def win_is_true(ch) :
+def win_is_true (ch) :
     win_states = [(1,2,3), (4,5,6), (7,8,9), (1,4,7), (2,5,8), (3,6,9), (1,5,9), (3,5,7)]
     for x in win_states :
         if (tictactoe[x[0]] == ch and tictactoe[x[1]] == ch and tictactoe[x[2]] == ch) :
@@ -28,7 +28,7 @@ def win_is_true(ch) :
 print ("Welcome to Tic Tac Toe... All the best!!")
 p1 = input ("Enter name of player 1 : ")
 p2 = input ("Enter name of player 2 : ")
-chance = random.randint(1,2)
+chance = random.randint (1,2)
 if chance == 1 :
     print ("Player 1 gets the first move!!")
 else :
@@ -64,7 +64,7 @@ while moves < 9 :
             tictactoe[place] = 'X'
             chance = 1
             chx = 'X'
-        if win_is_true(chx) :
+        if win_is_true (chx) :
             print ("Wohoo!! Congo!!")
             if chance == 2 :
                 print (p1 + " is the winner!")
