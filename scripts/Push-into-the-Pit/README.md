@@ -1,6 +1,10 @@
 # Push into the Pit
 
-A very simple naive Sokoban implementation & its AI based solver
+A simple Sokoban implementation & its AI based solver
+
+![Screenshot](https://user-images.githubusercontent.com/16884926/32172403-7681a3b2-bda1-11e7-901e-d4a511f1f4c2.png)
+
+![Screenshot](https://user-images.githubusercontent.com/16884926/32172619-3c89b220-bda2-11e7-998e-b66bcde58260.png)
 
 ### Steps to build
 * Install `python3` and `pygame`
